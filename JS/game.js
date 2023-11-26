@@ -10,12 +10,7 @@ const restartElement = document.getElementById("restart");
 const row = 20;
 const col = 10;
 
-const minSquareSize = 20;
-const maxSquareSize = 50;
-
-const screenWidth = window.innerWidth;
-
-let square = Math.min(maxSquareSize, Math.max(minSquareSize, screenWidth / 20));
+let square = 30;
 
 console.log("Tamanho do quadrado:", square);
 
