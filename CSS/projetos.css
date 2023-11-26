@@ -14,10 +14,17 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  width: fit-content;
+
   gap: 0.3rem;
-  width: 100%;
 
   margin-top: 1.5vw;
+}
+
+div {
+  width: fit-content;
+
+  align-self: center;
 }
 
 #geral {
@@ -27,6 +34,8 @@ section {
 main {
   display: flex;
   flex-direction: column;
+
+  margin: auto;
 }
 
 h1 {
@@ -60,4 +69,23 @@ img:hover {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
   -moz-filter: brightness(1.1);
+}
+
+@media screen and (max-width: 771px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    align-self: center;
+  }
+  img {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1479px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
