@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/07.js" defer></script>
+    <script src="JS/navbar.js" defer></script>
+    <title>WBT | Vetores</title>
+  </head>
+  <body>
+    <header>
+      <a href="projetos.html" id="title">
+        <h1>WEBUTEIS</h1>
+      </a>
+
+      <nav id="content-nav">
+        <ul>
+          <li><a href="tetrin.html" class="anim">Jogo</a></li>
+          <li><a href="projetos.html" class="anim">Projetos</a></li>
+        </ul>
+
+        <button id="bar-sidebar">
+          <div id="bar-sidebar-middle"></div>
+        </button>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar-disabled">
+      <ul id="nav-list-sidebar" style="display: none">
+        <a href="tetrin.html"><li>Jogo</li></a>
+        <a href="projetos.html"> <li>Projetos</li></a>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="container">
+        <h1>Manipulação de Vetores</h1>
+        <form id="arrayForm">
+          <label for="value">Digite um valor:</label>
+          <input type="number" class="input" id="value" required />
+
+          <input
+            type="submit"
+            class="button input"
+            id="adicionar"
+            value="Adicionar valores"
+          />
+          <div id="buttons">
+            <button type="button" class="button input" onclick="showValues()">
+              Mostrar Valores
+            </button>
+            <button type="button" class="button input" onclick="showMaxMin()">
+              Mostrar Máximo e Mínimo
+            </button>
+          </div>
+        </form>
+        <div class="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

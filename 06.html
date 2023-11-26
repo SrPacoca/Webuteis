@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="JS/06.js" defer></script>
+    <script src="JS/navbar.js" defer></script>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>WBT | Calculadora de Peso</title>
+  </head>
+  <body>
+    <header>
+      <a href="projetos.html" id="title">
+        <h1>WEBUTEIS</h1>
+      </a>
+
+      <nav id="content-nav">
+        <ul>
+          <li><a href="tetrin.html" class="anim">Jogo</a></li>
+          <li><a href="projetos.html" class="anim">Projetos</a></li>
+        </ul>
+
+        <button id="bar-sidebar">
+          <div id="bar-sidebar-middle"></div>
+        </button>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar-disabled">
+      <ul id="nav-list-sidebar" style="display: none">
+        <a href="tetrin.html"><li>Jogo</li></a>
+        <a href="projetos.html"> <li>Projetos</li></a>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="container">
+        <h1>Calculadora de Peso</h1>
+        <form id="weightForm">
+          <label for="gender">Sexo:</label>
+          <select id="gender" class="input" required>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+          </select>
+
+          <label for="height">Altura (em metros):</label>
+          <input type="number" class="input" id="height" step="0.01" required />
+
+          <input
+            type="submit"
+            class="button input"
+            id="submit"
+            value="Calcular Peso"
+          />
+        </form>
+        <div class="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

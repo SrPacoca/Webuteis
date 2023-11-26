@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="JS/05.js" defer></script>
+    <script src="JS/navbar.js" defer></script>
+    <title>WBT | Custo de piso</title>
+  </head>
+  <body>
+    <header>
+      <a href="projetos.html" id="title">
+        <h1>WEBUTEIS</h1>
+      </a>
+
+      <nav id="content-nav">
+        <ul>
+          <li><a href="tetrin.html" class="anim">Jogo</a></li>
+          <li><a href="projetos.html" class="anim">Projetos</a></li>
+        </ul>
+
+        <button id="bar-sidebar">
+          <div id="bar-sidebar-middle"></div>
+        </button>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar-disabled">
+      <ul id="nav-list-sidebar" style="display: none">
+        <a href="tetrin.html"><li>Jogo</li></a>
+        <a href="projetos.html"> <li>Projetos</li></a>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="container">
+        <h1>Custo de Piso</h1>
+
+        <form id="tileCostForm">
+          <label for="length">Comprimento do Cômodo (metros):</label>
+          <input
+            type="number"
+            class="input"
+            id="length"
+            placeholder="Comprimento"
+          />
+
+          <label for="width">Largura do Cômodo (metros):</label>
+          <input type="number" class="input" id="width" placeholder="Largura" />
+
+          <input
+            type="submit"
+            class="button input"
+            id="submit"
+            value="Calcular"
+          />
+        </form>
+
+        <div class="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

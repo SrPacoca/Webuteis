@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="JS/03.js" defer></script>
+    <script src="JS/navbar.js" defer></script>
+    <title>WBT | Venda</title>
+  </head>
+  <body>
+    <header>
+      <a href="projetos.html" id="title">
+        <h1>WEBUTEIS</h1>
+      </a>
+
+      <nav id="content-nav">
+        <ul>
+          <li><a href="tetrin.html" class="anim">Jogo</a></li>
+          <li><a href="projetos.html" class="anim">Projetos</a></li>
+        </ul>
+
+        <button id="bar-sidebar">
+          <div id="bar-sidebar-middle"></div>
+        </button>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar-disabled">
+      <ul id="nav-list-sidebar" style="display: none">
+        <a href="tetrin.html"><li>Jogo</li></a>
+        <a href="projetos.html"> <li>Projetos</li></a>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="container">
+        <h1>Calculadora de Venda</h1>
+
+        <form id="salesForm">
+          <div id="products">
+            <section>
+              <label for="product1">Produto 1:</label>
+              <input
+                type="text"
+                class="input"
+                id="product1"
+                placeholder="Nome do Produto"
+              />
+              <input
+                type="number"
+                class="price input"
+                placeholder="Valor do Produto"
+              />
+              <input
+                type="number"
+                class="quantity input"
+                placeholder="Quantidade Vendida"
+              />
+            </section>
+            <section>
+              <label for="product2">Produto 2:</label>
+              <input
+                type="text"
+                class="input"
+                id="product2"
+                placeholder="Nome do Produto"
+              />
+              <input
+                type="number"
+                class="price input"
+                placeholder="Valor do Produto"
+              />
+              <input
+                type="number"
+                class="quantity input"
+                placeholder="Quantidade Vendida"
+              />
+            </section>
+            <section>
+              <label for="product3">Produto 3:</label>
+              <input
+                type="text"
+                class="input"
+                id="product3"
+                placeholder="Nome do Produto"
+              />
+              <input
+                type="number"
+                class="price input"
+                placeholder="Valor do Produto"
+              />
+              <input
+                type="number"
+                class="quantity input"
+                placeholder="Quantidade Vendida"
+              />
+            </section>
+          </div>
+          <input
+            type="submit"
+            class="button input"
+            id="submit"
+            value="Calcular"
+          />
+        </form>
+
+        <div class="result"></div>
+      </div>
+    </main>
+  </body>
+</html>
