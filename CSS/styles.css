@@ -310,7 +310,7 @@ em {
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 1479px) {
   #bar-sidebar {
     display: none;
   }
